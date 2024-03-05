@@ -41,7 +41,20 @@ export default {
 
       backgroundImage: {
         'about-model': 'url("src/assets/Products/model-about-us.jpg")',
-      }
+      },
+
+      gridTemplateColumns: {
+        '16': 'repeat(16, minmax(0, 1fr))',
+      },
+
+      gridTemplateRows: {
+        '14': 'repeat(14, minmax(0, 1fr))',
+      },
+
+      gridColumnStart: {
+        '13' : '13',
+        '14' : '14',
+      },
     },
   },
   plugins: [],

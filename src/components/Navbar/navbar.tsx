@@ -9,16 +9,30 @@ import { useState } from "react";
 function Navbar() {
   const [navOpen, setNavOpen] = useState(false);
   return (
-    <section className=" h-16 w-screen bg-gry-900 fixed top-0 flex flex-col flex-wrap z-50">
-      <div className=" h-full w-[calc(100%-4rem)] mr-8 ml-8 self-center flex flex-row- flex-wrap justify-between">
+    <section className=" md:h-20 h-16 w-screen bg-gry-900 fixed top-0 flex flex-col flex-wrap z-50">
+      <div className="2xl:w-[1440px] md:mr-16 md:ml-16 md:w-[calc(100%-8rem)] h-full w-[calc(100%-4rem)] mr-8 ml-8 self-center flex flex-row flex-wrap justify-between">
         <Link to="/" className=" self-center">
-          <img className=" h-[50px] w-[50px]" src={SneakerLogo} />
+          <img
+            className="xl:w-16 xl:h-16 h-[50px] w-[50px]"
+            src={SneakerLogo}
+          />
         </Link>
         <img
-          className=" h-[50px] w-[50px] self-center"
+          className=" md:hidden h-[50px] w-[50px] self-center cursor-pointer"
           src={Hamb}
           onClick={() => setNavOpen(true)}
         />
+        <div className="max-[767px]:hidden xl:w-[52rem] h-full w-[34.5rem]">
+          <ul className="xl:text-xl h-full flex flex-row flex-wrap justify-between font-roboto font-bold text-white text-lg text-center">
+            <li className=" self-center cursor-pointer">MENS</li>
+            <li className=" self-center cursor-pointer">WOMENS</li>
+            <li className=" self-center cursor-pointer">SNEAKERS</li>
+            <li className=" self-center cursor-pointer">SPORTS</li>
+            <li className=" self-center cursor-pointer">
+              <img className="xl:w-11 xl:h-11 w-9 h-9" src={Cart} />
+            </li>
+          </ul>
+        </div>
       </div>
       <AnimatePresence>
         {navOpen && (
@@ -41,7 +55,7 @@ function Navbar() {
           >
             <div className=" w-[calc(100%-4rem)] h-[calc(100%-4rem)] m-8 flex flex-col flex-wrap">
               <img
-                className=" w-9 h-12 self-end"
+                className=" w-9 h-12 self-end cursor-pointer"
                 src={CloseBtn}
                 onClick={() => setNavOpen(false)}
               />
