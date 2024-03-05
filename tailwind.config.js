@@ -40,7 +40,7 @@ export default {
       },
 
       backgroundImage: {
-        'about-model': 'url("../../assets/Products/model-about-us.jpg")',
+        'about-model': "url('/Products/model-about-us.jpg')",
       },
 
       gridTemplateColumns: {
