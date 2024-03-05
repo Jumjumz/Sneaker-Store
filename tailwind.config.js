@@ -39,10 +39,6 @@ export default {
         'inter-light': ['"Inter-Light"'],
       },
 
-      backgroundImage: {
-        'about-model': "url('/Products/model-about-us.jpg')",
-      },
-
       gridTemplateColumns: {
         '16': 'repeat(16, minmax(0, 1fr))',
       },

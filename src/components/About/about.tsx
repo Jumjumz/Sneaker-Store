@@ -1,4 +1,5 @@
 import Shoepic from "../../assets/Products/pexels-adrian-dorobantu-2300334.jpg";
+import Model from "../../assets/Converted/model-about-us.webp";
 
 function About() {
   return (
@@ -23,7 +24,10 @@ function About() {
             </p>
           </div>
           <div className="xl:col-start-8 xl:col-span-9 xl:h-[81.8%] md:w-full md:h-[90%] md:z-10 md:col-start-5 md:col-span-6 md:row-start-2 md:row-span-12 w-[80%] h-[31rem] bg-drkred flex flex-col flex-wrap">
-            <div className="xl:w-[calc(100%-8rem)] xl:bg-cover xl:bg-no-repeat xl:bg-center xl:ml-16 xl:mr-16 xl:mb-16 w-[calc(100%-4rem)] h-[calc(100%-4rem)] m-8 bg-about-model bg-fixed self-center bg-cover" />
+            <div
+              className="xl:w-[calc(100%-8rem)] xl:bg-cover xl:bg-no-repeat xl:bg-center xl:ml-16 xl:mr-16 xl:mb-16 w-[calc(100%-4rem)] h-[calc(100%-4rem)] m-8 bg-about-model bg-fixed self-center bg-cover"
+              style={{ backgroundImage: `url(${Model})` }}
+            />
           </div>
           <div className="md:hidden w-full h-28 flex flex-col justify-center">
             <p className=" font-inter-light text-black text-sm text-center">
