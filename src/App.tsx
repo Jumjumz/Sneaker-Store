@@ -1,23 +1,16 @@
 import Navbar from "./components/Navbar/navbar";
-import Hero from "./components/Hero/hero";
-import PopProd from "./components/Pop Prod/popprod.";
-import NewArrivals from "./components/Arrivals/arrivals";
-import About from "./components/About/about";
-import Partners from "./components/Partners/partners";
-import Footer from "./components/Footer/footer";
+import Pages from "./components/Pages/pages";
+import BuyPage from "./components/Buy/buypage";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <>
       <Navbar />
-      <div className="flex flex-col flex-wrap overflow-x-hidden">
-        <Hero />
-        <PopProd />
-        <NewArrivals />
-        <About />
-        <Partners />
-        <Footer />
-      </div>
+      <Routes>
+        <Route path="/" element={<Pages />} />
+        <Route path="/buypage/:id" element={<BuyPage />} />
+      </Routes>
     </>
   );
 }

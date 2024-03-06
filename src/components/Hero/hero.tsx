@@ -2,6 +2,7 @@ import ImgOne from "../../assets/Products/pexels-suraj-b-2759783.jpg";
 import ImgTwo from "../../assets/Products/pexels-mnz-1598505.jpg";
 import ImgThree from "../../assets/Products/pexels-web-donut-19090.jpg";
 import ImgFour from "../../assets/Products/pexels-ox-street-6540927.jpg";
+import { motion } from "framer-motion";
 
 function Hero() {
   return (
@@ -36,9 +37,16 @@ function Hero() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id
             magna vel urna consectetur posuere.
           </p>
-          <button className="xl:mt-8 font-roboto font-bold text-sm text-white w-40 h-11 mt-10 bg-blu-800">
+          <motion.button
+            className="xl:mt-8 font-roboto font-bold text-sm text-white w-40 h-11 mt-10 bg-blu-800"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.96 }}
+            transition={{
+              delay: 0,
+            }}
+          >
             SHOP NOW
-          </button>
+          </motion.button>
         </div>
         <div className="xl:hidden max-[767px]:hidden col-start-1 col-span-10 row-start-11 row-span-2 bg-coral-800 " />
       </div>

@@ -1,8 +1,10 @@
-import { getArrivals } from "../Products/products";
+import { getProduct } from "../Products/products";
 import { getProdURL } from "../Utils/utils";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 function NewArrivals() {
-  const newArrivals = getArrivals();
+  const newArrivals = getProduct();
   return (
     <>
       <section className=" h-full w-screen flex flex-col flex-wrap">
@@ -33,12 +35,14 @@ function NewArrivals() {
                   <h1 className="m-0 font-roboto font-extralight text-sm text-center">
                     {newArrivals.prodName}
                   </h1>
-                  <button className=" w-full h-4 bg-coral-900 text-white text-xs">
-                    BUY NOW
-                  </button>
-                  <button className="w-full h-4 bg-blu-800 text-white text-xs font-light">
+                  <Link to={"/buypage/" + newArrivals.id}>
+                    <motion.button className=" w-full h-4 bg-coral-900 text-white text-xs">
+                      BUY NOW
+                    </motion.button>
+                  </Link>
+                  <motion.button className="w-full h-4 bg-blu-800 text-white text-xs font-light">
                     ADD TO CART
-                  </button>
+                  </motion.button>
                 </div>
               </div>
             </>
@@ -65,12 +69,28 @@ function NewArrivals() {
                   <h1 className="xl:text-xl m-0 font-roboto font-extrabold text-sm text-center">
                     {newArrivals.prodName}
                   </h1>
-                  <button className="2xl:h-8 w-full h-6 bg-coral-900 text-white text-xs font-extralight rounded-xl">
-                    BUY NOW
-                  </button>
-                  <button className="2xl:h-8 w-full h-6 bg-blu-800 text-white text-xs font-extralight rounded-xl">
+                  <Link to={"/buypage/" + newArrivals.id}>
+                    <motion.button
+                      className="2xl:h-8 w-full h-6 bg-coral-900 text-white text-xs font-extralight rounded-xl"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.96 }}
+                      transition={{
+                        delay: 0,
+                      }}
+                    >
+                      BUY NOW
+                    </motion.button>
+                  </Link>
+                  <motion.button
+                    className="2xl:h-8 w-full h-6 bg-blu-800 text-white text-xs font-extralight rounded-xl"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.96 }}
+                    transition={{
+                      delay: 0,
+                    }}
+                  >
                     ADD TO CART
-                  </button>
+                  </motion.button>
                 </div>
               </div>
             </>

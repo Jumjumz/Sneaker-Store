@@ -37,20 +37,23 @@ function Navbar() {
       <AnimatePresence>
         {navOpen && (
           <motion.div
+            key="/"
             className=" absolute w-[70%] h-dvh bg-blu-900 right-0"
             variants={{
-              hidden: { x: ["100vw"], scale: 0.7 },
-              animate: { x: 0, scale: 1 },
+              hidden: { x: ["100vw"] },
+              animate: { x: 0 },
+              exit: { x: ["100vw"] },
             }}
             initial="hidden"
             animate="animate"
+            exit="exit"
             transition={{
               duration: 0.5,
               delay: 0,
               ease: "linear",
               type: "spring",
-              bounce: 0.5,
-              stiffness: 30,
+              bounce: 0.8,
+              stiffness: 50,
             }}
           >
             <div className=" w-[calc(100%-4rem)] h-[calc(100%-4rem)] m-8 flex flex-col flex-wrap">
@@ -60,11 +63,11 @@ function Navbar() {
                 onClick={() => setNavOpen(false)}
               />
               <ul className=" font-roboto font-bold text-white text-5xl text-center">
-                <li className=" mt-24 mb-12">MENS</li>
-                <li className=" mt-24 mb-12">WOMENS</li>
-                <li className=" mt-24 mb-12">SNEAKERS</li>
-                <li className=" mt-24 mb-12">SPORTS</li>
-                <li className=" flex flex-col flex-wrap mt-8">
+                <li className=" mt-24 mb-12 cursor-pointer">MENS</li>
+                <li className=" mt-24 mb-12 cursor-pointer">WOMENS</li>
+                <li className=" mt-24 mb-12 cursor-pointer">SNEAKERS</li>
+                <li className=" mt-24 mb-12 cursor-pointer">SPORTS</li>
+                <li className=" flex flex-col flex-wrap mt-8 cursor-pointer">
                   <img className=" w-16 h-16 self-center" src={Cart} />
                 </li>
               </ul>
