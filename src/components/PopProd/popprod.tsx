@@ -23,7 +23,7 @@ function PopProd() {
             >
               <img
                 className=" w-full h-[60%] object-cover"
-                src={getProdURL(disProduct.name)}
+                src={getProdURL(disProduct.lname)}
                 loading="lazy"
               />
               <div className=" bg-gry-500 w-full h-[40%] flex flex-col flex-wrap justify-evenly pl-4 pr-4 pb-2">

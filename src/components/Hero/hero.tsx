@@ -1,7 +1,7 @@
-import ImgOne from "../../assets/Products/pexels-suraj-b-2759783.jpg";
-import ImgTwo from "../../assets/Products/pexels-mnz-1598505.jpg";
-import ImgThree from "../../assets/Products/pexels-web-donut-19090.jpg";
-import ImgFour from "../../assets/Products/pexels-ox-street-6540927.jpg";
+import ImgOne from "../../assets/Converted/pexels-suraj-b-2759783.webp";
+import ImgTwo from "../../assets/Converted/pexels-mnz-1598505.webp";
+import ImgThree from "../../assets/Converted/pexels-web-donut-19090.webp";
+import ImgFour from "../../assets/Converted/pexels-ox-street-6540927.webp";
 import { motion } from "framer-motion";
 
 function Hero() {

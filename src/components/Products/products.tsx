@@ -2,6 +2,7 @@ const products = [
   {
     id: 1,
     name: "pexels-mnz-1598505.webp",
+    lname: "Asset 15.webp",
     prodName: "Sports Shoes",
     nameClass:
       "xl:top-0 xl:text-5xl xl:col-start-6 xl:col-span-3 xl:row-start-2 md:text-4xl md:top-24 font-jost text-2xl text-end text-white relative top-16 mr-6 tracking-widest",
@@ -14,6 +15,7 @@ const products = [
   {
     id: 2,
     name: "colorful-slip-unisex-streetwear-sneakers-fashion.webp",
+    lname: "Asset 8.webp",
     prodName: "Street Shoes",
     nameClass:
       "xl:top-0 xl:text-5xl xl:col-start-6 xl:col-span-3 xl:row-start-2 md:text-4xl md:top-24 font-jost text-2xl text-end relative top-16 mr-6 tracking-widest",
@@ -26,6 +28,7 @@ const products = [
   {
     id: 3,
     name: "pexels-web-donut-19090.webp",
+    lname: "Asset 7.webp",
     prodName: "Street Shoes",
     nameClass:
       "xl:top-0 xl:text-5xl xl:col-start-6 xl:col-span-3 xl:row-start-2 md:text-4xl md:top-24 font-jost text-2xl text-end relative top-16 mr-6 tracking-widest",
@@ -38,6 +41,7 @@ const products = [
   {
     id: 4,
     name: "pexels-richard-taveira-17825341.webp",
+    lname: "Asset 14.webp",
     prodName: "Sports Shoes",
     nameClass:
       "xl:top-0 xl:text-5xl xl:col-start-6 xl:col-span-3 xl:row-start-2 md:text-4xl md:top-24 font-jost text-2xl text-end relative top-16 mr-6 tracking-widest",
@@ -50,6 +54,7 @@ const products = [
   {
     id: 5,
     name: "pexels-mnz-1598508.webp",
+    lname: "Asset 10.webp",
     prodName: "Street Shoes",
     nameClass:
       "xl:top-0 xl:text-5xl xl:col-start-6 xl:col-span-3 xl:row-start-2 md:text-4xl md:top-24 font-jost text-2xl text-end text-white relative top-16 mr-6 tracking-widest",
@@ -62,6 +67,7 @@ const products = [
   {
     id: 6,
     name: "pexels-suraj-b-2759779.webp",
+    lname: "Asset 11.webp",
     prodName: "Sports Shoes",
     nameClass:
       "xl:top-0 xl:text-5xl xl:col-start-6 xl:col-span-3 xl:row-start-2 md:text-4xl md:top-24 font-jost text-2xl text-end text-white relative top-16 mr-6 tracking-widest",
@@ -74,6 +80,7 @@ const products = [
   {
     id: 7,
     name: "shoes.webp",
+    lname: "Asset 12.webp",
     prodName: "Sports Shoes",
     nameClass:
       "xl:top-0 xl:text-5xl xl:col-start-6 xl:col-span-3 xl:row-start-2 md:text-4xl md:top-24 font-jost text-2xl text-end text-white relative top-16 mr-6 tracking-widest",
@@ -86,6 +93,7 @@ const products = [
   {
     id: 8,
     name: "fashion-shoes-sneakers.webp",
+    lname: "Asset 17.webp",
     prodName: "Street Shoes",
     nameClass:
       "xl:top-0 xl:text-5xl xl:col-start-6 xl:col-span-3 xl:row-start-2 md:text-4xl md:top-24 font-jost text-2xl text-end text-white relative top-16 mr-6 tracking-widest",
@@ -98,6 +106,7 @@ const products = [
   {
     id: 9,
     name: "pexels-rafael-quaty-13236696.webp",
+    lname: "Asset 16.webp",
     prodName: "Street Shoes",
     nameClass:
       "xl:top-0 xl:text-5xl xl:col-start-6 xl:col-span-3 xl:row-start-2 md:text-4xl md:top-24 font-jost text-2xl text-end text-white relative top-16 mr-6 tracking-widest",
@@ -110,6 +119,7 @@ const products = [
   {
     id: 10,
     name: "pexels-ox-street-6540927.webp",
+    lname: "Asset 13.webp",
     prodName: "Sports Shoes",
     nameClass:
       "xl:top-0 xl:text-5xl xl:col-start-6 xl:col-span-3 xl:row-start-2 md:text-4xl md:top-24 font-jost text-2xl text-end text-white relative top-16 mr-6 tracking-widest",
