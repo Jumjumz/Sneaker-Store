@@ -1,25 +1,21 @@
-import ImgOne from "../../assets/Converted/pexels-suraj-b-2759783.webp";
-import ImgTwo from "../../assets/Converted/pexels-mnz-1598505.webp";
-import ImgThree from "../../assets/Converted/pexels-web-donut-19090.webp";
-import ImgFour from "../../assets/Converted/pexels-ox-street-6540927.webp";
+import { getHero } from "../Products/products";
+import { getProdURL } from "../Utils/utils";
 import { motion } from "framer-motion";
 
 function Hero() {
+  const heroAni = getHero();
   return (
     <section className=" w-screen h-full flex flex-col flex-wrap ">
       <div className="2xl:w-[1440px] xl:h-[984px] xl:grid-cols-16 xl:grid-rows-14 xl:pl-8 xl:pr-8 md:h-[1140px] md:pt-20 h-[932px] md:ml-16 md:mr-16 md:grid-cols-12 md:bg-gry-400 self-center pt-16 grid grid-cols-6 grid-rows-12">
-        <div className=" xl:pr-4 xl:col-start-6 xl:col-span-4 xl:row-start-3 xl:row-span-8 md:col-start-7 md:row-start-2 md:h-[31rem] md:z-10 col-start-1 col-span-3 row-start-1 row-span-6 mt-1 mr-2 h-[482px]">
-          <img className="w-full h-full object-cover" src={ImgOne} />
-        </div>
-        <div className=" xl:col-start-14 xl:col-span-4 xl:row-start-3 xl:row-span-8 md:col-start-10 md:row-start-5 md:h-[29rem] md:z-10 col-start-4 col-span-3 row-start-6 row-span-6 h-[474px] mt-4">
-          <img className=" w-full h-full object-cover" src={ImgTwo} />
-        </div>
-        <div className="max-[767px]:hidden xl:pr-8 xl:pt-6 xl:col-start-10 xl:col-span-4 xl:row-start-1 xl:row-span-8 col-start-5 col-span-4 row-start-7 row-span-3 md:z-10">
-          <img className=" w-full h-full object-cover" src={ImgThree} />
-        </div>
-        <div className="max-[1279px]:hidden mr-7   mt-8 col-start-10 col-span-4 row-start-9 row-span-4 z-10">
-          <img className=" w-full h-full object-cover" src={ImgFour} />
-        </div>
+        {heroAni.map((heroAni) => (
+          <div className={heroAni.divclass} key={heroAni.id}>
+            <motion.img
+              className="w-full h-full object-cover"
+              src={getProdURL(heroAni.name)}
+              alt={heroAni.alt}
+            />
+          </div>
+        ))}
         <div className="xl:mr-4 xl:mt-3 xl:h-[31rem] xl:col-start-6 xl:col-span-4 xl:row-start-3 xl:row-span-8 md:col-start-7 md:row-start-2 md:h-[31rem] md:z-0 h-[480px] ml-2 mt-4 -z-10 bg-coral-900 col-start-1 col-span-3 row-start-1 row-span-6" />
         <div className="xl:ml-[-0.5rem] xl:mt-2 xl:h-[30rem] xl:col-start-14 xl:row-start-3 xl:row-span-8 md:col-start-10 md:row-start-5 md:h-[30.5rem] md:z-0 w-[76px] h-[505px] -z-10 mt-[0.35rem] ml-[-0.5rem] bg-coral-900 col-start-4 row-start-6 row-span-6 " />
         <div className="xl:ml-[-1.3rem] xl:mr-12 xl:mt-10 xl:h-[14.2rem] xl:col-start-10 xl:col-span-4 xl:row-start-9 xl:row-span-4 max-[767px]:hidden h-[245px] relative left-3 md:z-0 mt-8 col-start-5 col-span-4 row-start-7 row-span-3 bg-coral-900 " />

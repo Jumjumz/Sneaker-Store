@@ -1,4 +1,4 @@
-import Shoepic from "../../assets/Converted/pexels-adrian-dorobantu-2300334.webp";
+import Shoepic from "../../assets/Converted/Asset 111.webp";
 import Model from "../../assets/Converted/model-about-us.webp";
 
 function About() {

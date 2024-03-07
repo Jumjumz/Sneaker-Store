@@ -15,7 +15,7 @@ function Partners() {
           </div>
           <div className="xl:h-[45rem] w-full h-[40rem] flex flex-col overflow-clip">
             <img
-              className="xl:w-[120%] xl:h-[120%] xl:top-[-8rem] xl:object-contain xl:rotate-[20deg] xl:relative md:rotate-45 md:h-full md:object-fill h-[90%] object-cover self-center"
+              className="xl:w-[120%] xl:h-[120%] xl:top-[-5rem] xl:object-contain xl:rotate-[20deg] xl:relative md:rotate-45 md:h-full md:object-fill h-[90%] object-cover self-center"
               src={PartSvg}
               loading="lazy"
             />

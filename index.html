@@ -12,7 +12,17 @@
     <title>Sneaker Store</title>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root" style="height: 100%; width: 100%;">
+      <div style="height:100vh; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <l-line-spinner
+          size="40"
+          stroke="3"
+          speed="1"
+          color="black" 
+        ></l-line-spinner>
+      </div>
+    </div>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/lineSpinner.js"></script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

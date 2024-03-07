@@ -6,7 +6,16 @@ import { motion } from "framer-motion";
 function BuyPage() {
   const params = useParams();
   const getProd = getProduct();
-  let passedData = null;
+  type SType = {
+    imgName: string;
+    prodName: string;
+    prodClass: string;
+    clsFr: string;
+    clsTw: string;
+    clsTr: string;
+    price: string;
+  };
+  let passedData: SType;
   getProd.map((getProd) => {
     if (params.id === getProd.id.toString()) {
       passedData = {
@@ -23,7 +32,19 @@ function BuyPage() {
   return (
     <>
       <section className=" w-screen h-screen flex flex-col flex-wrap overflow-x-hidden">
-        <div className="2xl:w-[1440px] 2xl:self-center xl:w-[calc(100%-6rem)] xl:h-[1024px] xl:pt-20 xl:pl-12 xl:pr-12 xl:ml-12 xl:mr-12 xl:grid xl:grid-cols-8 xl:grid-rows-8 md:h-[1200px] w-[calc(100%-4rem)] h-[950px] pt-16 ml-8 mr-8 flex flex-col flex-wrap bg-gry-400">
+        <motion.div
+          className="2xl:w-[1440px] 2xl:self-center xl:w-[calc(100%-6rem)] xl:h-[1024px] xl:pt-20 xl:pl-12 xl:pr-12 xl:ml-12 xl:mr-12 xl:grid xl:grid-cols-8 xl:grid-rows-8 md:h-[1200px] w-[calc(100%-4rem)] h-[950px] pt-16 ml-8 mr-8 flex flex-col flex-wrap bg-gry-400"
+          variants={{
+            hidden: { opacity: 0 },
+            visible: { opacity: 1 },
+          }}
+          initial="hidden"
+          animate="visible"
+          transition={{
+            duration: 0.8,
+            delay: 0.5,
+          }}
+        >
           <h1 className={passedData!.prodClass}>{passedData!.prodName}</h1>
           <img
             className=" xl:col-start-3 xl:col-span-6 xl:row-start-2 xl:row-span-4 md:h-[30rem] w-full h-72 rounded-ee-[3rem] object-cover"
@@ -82,7 +103,7 @@ function BuyPage() {
               BUY
             </motion.button>
           </div>
-        </div>
+        </motion.div>
       </section>
     </>
   );

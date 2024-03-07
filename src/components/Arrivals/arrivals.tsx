@@ -48,9 +48,12 @@ function NewArrivals() {
             </>
           ))}
           <div className=" w-full h-12 flex flex-col flex-wrap">
-            <button className=" h-full w-44 font-roboto font-extralight text-xl bg-coral-800 self-center text-black">
+            <motion.button
+              className=" h-full w-44 font-roboto font-extralight text-xl bg-coral-800 self-center text-black"
+              whileTap={{ scale: 0.93 }}
+            >
               SEE MORE
-            </button>
+            </motion.button>
           </div>
         </div>
         <div className="2xl:w-[1440px] 2xl:self-center min-[1410px]:pl-24 min-[1410px]:pr-24 xl:h-[1200px] xl:pb-8 max-[767px]:hidden min-[1058px]:justify-center min-[1058px]:gap-8 min-[1058px]:h-[1100px] w-[calc(100%-8rem)] h-[1004px] ml-16 mr-16 pl-12 pr-12 md:bg-gry-400 flex flex-row flex-wrap justify-between">
