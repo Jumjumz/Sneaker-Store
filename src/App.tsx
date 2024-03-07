@@ -2,7 +2,7 @@ import Navbar from "./components/Navbar/navbar";
 import Pages from "./components/Pages/pages";
 import BuyPage from "./components/Buy/buypage";
 import { Routes, Route } from "react-router-dom";
-import { useEffect, useState, Suspense } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
   const TIMER = 3000;
