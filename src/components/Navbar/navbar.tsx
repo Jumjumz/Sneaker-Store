@@ -36,24 +36,27 @@ function Navbar() {
       </div>
       <AnimatePresence>
         {navOpen && (
-          <motion.div
-            key="/"
+          <motion.nav
+            key={"nav"}
             className=" absolute w-[70%] h-dvh bg-blu-900 right-0"
             variants={{
-              hidden: { x: ["100vw"] },
-              animate: { x: 0 },
-              exit: { x: ["100vw"] },
+              hidden: {
+                x: 1000,
+              },
+              animate: {
+                x: 0,
+              },
             }}
             initial="hidden"
             animate="animate"
-            exit="exit"
+            exit="hidden"
             transition={{
               duration: 0.5,
               delay: 0,
               ease: "linear",
               type: "spring",
               bounce: 0.8,
-              stiffness: 50,
+              stiffness: 40,
             }}
           >
             <div className=" w-[calc(100%-4rem)] h-[calc(100%-4rem)] m-8 flex flex-col flex-wrap">
@@ -72,7 +75,7 @@ function Navbar() {
                 </li>
               </ul>
             </div>
-          </motion.div>
+          </motion.nav>
         )}
       </AnimatePresence>
     </section>
